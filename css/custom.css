@@ -1,0 +1,445 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#header {
+    height: 100vh;
+    background-image: url(../images/image1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.container {
+    margin-right: 100px;
+    margin-left: 100px;
+}
+.logo {
+    margin-top: 30px;
+    width: 100px;
+}
+.headerText {
+    max-width: 350px;
+    margin-top: 100px;
+}
+ h1{
+    font-size: 34px;
+}
+.square {
+    height: 12px;
+    width: 12px;
+    display: inline-block;
+    background: white;
+    margin: 15px 0;
+}
+.commonBtn {
+    padding: 18px 40px;
+    background: transparent;
+    outline: none;
+    border: 2px solid white;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+p{
+    font-size: 15px;
+    line-height: 18px;
+    color: black;
+}
+.headerText button{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.line1 {
+    width: 15px;
+    height: 15px;
+    background: white;
+    display: inline-block;
+}
+.line2 {
+    width: 80px;
+    height: 1px;
+    background: white;
+    display: inline-block;
+    animation: anim1 10s ;
+}
+.line3 {
+    width: 60px;
+    height: 1px;
+    background: white;
+    display: inline-block;
+    animation: anim2 10s ;
+}
+.line {
+    line-height: 8px;
+}
+@keyframes anim1 {
+    0%,40%,100%{
+        width: 80px;
+    }
+    30%{
+        width: 50px;
+    }
+    80%{
+        width: 130px;
+    }
+
+
+}
+@keyframes anim2 {
+    0%,40%,100%{
+        width: 60px;
+    }
+    30%{
+        width: 80px;
+    }
+    80%{
+        width: 100px;
+    }
+
+
+}
+#sideNav{
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    right: -250px;
+    top: 0;
+    background: white;
+    z-index: 2;
+    transition: 0.5s;
+}
+nav ul li {
+    list-style: none;
+    margin: 50px 20px;
+    
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+#menuBtn {
+    width: 50px;
+    position: fixed;
+    right: 65px;
+    top: 35px;
+    z-index: 2;
+    cursor: pointer;
+}
+                   
+
+                     /*--About--*/
+
+                
+
+#about,#offer {
+    padding: 100px 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    background: url(../images/orange-house-near-body-of-water-and-trees-2169857.jpg);
+}
+.aboutLeft {
+    flex-basis: 50%;
+}
+.aboutLeft img{
+    width: 100%;
+}
+.aboutRight {
+    flex-basis: 50%;
+    text-align: right;
+}
+.aboutText{
+    max-width: 500px;
+    margin-right: 100px;
+    display: inline-block;
+}
+.aboutText h2{
+    margin: 50px 0 10px;
+    font-size: 28px;
+    font-style: italic;
+}
+.aboutText h3{
+    font-size: 20px;
+    font-style: italic; 
+    color:rgb(39, 39, 39);
+}
+
+                    /*--Features--*/
+
+#features {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: skyblue;
+}   
+.feaRow {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}  
+.feaCol {
+    flex-basis: 25%;
+    text-align: center;
+
+}  
+.feaCol img{
+    width: 100px;
+}
+.feaCol h4{
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 400;
+}
+.feaBtn{
+    margin: 80px auto 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.feaBtn .line {
+    text-align: right;
+    display: inline-block;
+    margin-right: 25px;
+}
+
+
+                      /*--Testimonials--*/
+
+
+#testimonials {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    background: #33d1a0;
+    flex-wrap: wrap;
+    margin: 20px;
+}    
+.box {
+  
+    width: 320px;
+    height: 380px;
+    margin: 20px;
+    background: #121e27;
+}     
+             
+.content {
+    padding: 30px;
+    text-align: center;
+
+}
+.quote {
+    max-width: 48px;
+}
+.content p{
+    color: #fff;
+    padding: 20px;
+}
+.content .user {
+    max-width: 100px;
+    border-radius: 50%;
+}
+.content h3 {
+    color: #33d1a0;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+
+                                /*offer*/
+
+                                
+
+#offer {
+    background-image: url(../images/action-beach-fun-leisure-416676.jpg);
+}
+
+#offer button{
+    margin: 30px 0;
+}
+
+
+                             /*--Contact--*/
+
+#contact {
+    background: url(../images/white-airliner-wing-on-top-of-sea-clouds-2007401.jpg);
+    padding: 100px 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}                             
+form{
+    max-width: 350px;
+    margin: 30px 0;
+}
+form input {
+    width: 100%;
+    padding: 12px 10px;
+    margin-bottom: 5px;
+    outline: none;
+    box-shadow: none;
+    box-sizing: border-box;
+    border: 2px solid white;
+}
+.btnBox {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.btnBox button {
+    flex-basis: 48%;
+    padding: 18px 0;
+
+}
+
+
+
+                  /*--Footer--*/
+
+
+#footer {
+    padding: 50px 0 30px;
+}
+
+hr{ 
+    width: 100%;
+    border: 0;
+    border-top: 1px solid #33d1a0;
+}
+
+.footer-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer-left-col {
+    flex-basis: 50%;
+    margin-top: 60px;
+
+}
+.footer-right-col {
+    flex-basis: 35%;
+    margin: 30px;
+}
+
+.footere-links {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.link-title h4 {
+    color: springgreen;
+    margin-bottom: 20px;
+}
+
+.link-title small {
+    font-size: 13px;
+}
+
+.footerInfo {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.Btn {
+  background: springgreen;
+  color: white;
+  padding: 10px 20px;
+}
+.footer-logo img {
+    width: 100px;
+}
+.copyright-text ,.footer-logo {
+    flex-basis: 40%;
+}
+
+                                   /*--Social Icons --*/
+
+
+ .social-icons{
+     width: 50px;
+     position: fixed;
+     top: 50%;
+     left: 0;
+     transform: translateY(-50%);
+     z-index: 1;
+ }
+ .social-icons .icon {
+     width: 20px;
+     display: block;
+     margin: 0 auto 20px;
+     cursor: pointer;
+ }
+
+
+
+
+@media only screen and (max-width : 770px){
+    header {
+        background-image: none;
+    }
+    .container {
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+    .logo {
+        margin-top: 27px;
+        width: 70px;
+    }
+    .headerText {
+       
+        margin-top: 100px;
+    }
+     h1{
+        font-size: 25px;
+    }
+    #menuBtn {
+        width: 40px;
+        right: 50px;
+       
+}
+.commonBtn {
+    padding: 10px 16px;
+}
+.social-icons .icon {
+    width: 14px;
+    margin: 15 auto;
+  
+}
+.aboutLeft ,.aboutRight {
+    flex-basis: 100%;
+}
+.aboutText{
+    margin: 50px 50px 0;
+    display: inline-block;
+}
+.aboutText h2{
+    font-size: 18px;
+}
+.feaCol {
+    flex-basis: 100%;
+   margin-bottom: 20px;
+
+}  
+#testimonials {
+    justify-content: center; 
+} 
+ .footer-left-col , .footer-right-col {
+    flex-basis: 100%;
+
+}
+ .link-title{
+     flex-basis: 50%;
+     margin-bottom: 30px;
+ }
+
+
+}
